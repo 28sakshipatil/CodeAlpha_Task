@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgeCalci</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">AgeCALCI</div>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+<!-- <center> -->
+    <!-- HeroSection -->
+    <div id="home">
+        <br>
+        <br>
+        <br>
+        <div class="hero">
+            <h1>"Discover Your Exact Age - Instantly!"<br>
+                <i>"Not just in years... Know your days, hours, and even seconds!"</i>
+            </h1>
+            <h2>🎉 "How Old Are You... Exactly?" 🎉
+                <br>
+                Letss find out! 🕵️‍♂️
+            </h2>
+            
+        </div>
+    </div>
+
+
+  <!-- About  -->
+  <div id="about">
+    <div class="abt">
+        <h2>🕒 "Your Age, Beyond Just Years!"</h2>
+        <p>
+            "Have you ever wondered how many days, hours, or even minutes you've been alive? Our free Age Calculator not only calculates your age in years but also gives you precise results—down to days, hours, and seconds! It's fun, fast, and 100% accurate."
+        </p>
+        <h2>Why Use Our Age Calculator? 🤔</h2>
+        <p>
+            "Because knowing your exact age can be eye-opening and fun! Whether you're curious about your milestones, celebrating a birthday, or just want to calculate your life in days—we make it easy and enjoyable."
+        </p>
+        <h3>Key Features:</h3>
+        <ul>
+            <li>🗓️ Instant Calculation – Enter your date of birth and get your exact age in seconds!</li>
+            <li>🎯 Accurate Results – Know your age in years, months, days, hours, minutes, and even seconds.</li>
+            <li>📅 Customizable – Find age for any date in the past or future.</li>
+            <li>💻 User-Friendly Interface – Simple, clean design for everyone to use.</li>
+            <li>✨ Fun and Informative – Discover fun facts, like the total days you've been alive!</li>
+        </ul>
+    </div>
+</div>
+<!-- </center> -->
+
+<!-- Services  -->
+<div id="services">
+    <div class="service-container">
+      <h1 class="title">Age Calculator</h1>
+      <p class="subtitle">Select an option:</p>
+
+      <div class="options">
+        <label class="option-label">
+          <input type="radio" name="option" value="date-month-year">
+          Enter your date, month, and year of birth
+        </label>
+        <label class="option-label">
+          <input type="radio" name="option" value="year-only">
+          Enter just your year of birth
+        </label>
+        <label class="option-label">
+          <input type="radio" name="option" value="date-month-year-time">
+          Enter your date, month, and year of birth with time
+        </label>
+      </div>
+
+      <div class="inputs">
+        <input type="date" id="date-input" class="input-field" placeholder="Enter date">
+        <input type="number" id="year-input" class="input-field" placeholder="Enter year" style="display: none;">
+        <div id="date-time-inputs" style="display: none;">
+          <input type="date" id="date-time-date" class="input-field">
+          <input type="time" id="date-time-time" class="input-field">
+        </div>
+      </div>
+
+      <button id="calculate-button" class="calculate-button">Calculate</button>
+
+      <div class="result-section" id="result-section" style="display: none;">
+        <hr>
+        <h2>Your Age:</h2>
+        <p id="result"></p>
+        <h3>Fun Fact💡:</h3>
+        <p id="fun-fact"></p>
+      </div>
+
+      <div id="emoji-container"></div>
+    </div>
+  </div>
+
+  <center>
+    <div class="share-container">
+      <h2>🌐 Share This Website with Your Friends!</h2><br>
+      <p>Enjoy using our Age Calculator? Help us spread the word by sharing it with your friends,family,colleagues! Just click the button below to share it.</p>
+      <br>
+      <!-- Custom Share Button -->
+      <button id="share-button" class="share-button">Share</button>
+    </div></center>
+ 
+  
+
+
+
+    <!-- Footer -->
+    <div id="contact">
+      <footer class="footer">
+        <div class="footer-content">
+          <p>© 2025 AgeCalci. All Rights Reserved.</p>
+          <ul class="social-icons">
+            <li><a href="https://github.com/28sakshipatil">Github</a></li>
+            <li> | </li>
+            <li><a href="https://www.instagram.com/sakshipatil_.28">Instagram</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  
+
+    <script src="script.js"></script>
+  </body>
+  </html>
